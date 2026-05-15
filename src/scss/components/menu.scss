@@ -1,13 +1,12 @@
 .context-menu {
   display: none;
-  background: #27273d;
-  border-radius: 0 0 32px 32px;
-  padding: 78px 60px 78px;
+  background: #def5fd;
+  padding: 74px 60px 74px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  top: 53px;
+  top: 52px;
   left: 0;
   right: 0;
   transform: none;
@@ -30,30 +29,17 @@
 }
 
 .context-list-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.44444;
-  color: #fff;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #03396c;
   transition:
     color 0.3s ease-in-out,
     opacity 0.3s ease-in-out,
     text-shadow 0.3s ease-in-out;
 
   &:active {
-    color: #7b61ff;
-
-    &::before {
-      content: '';
-      background: #7b61ff;
-      border-radius: 16777200px;
-      width: 8px;
-      height: 8px;
-      position: absolute;
-      left: -12px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
   }
 }
 
