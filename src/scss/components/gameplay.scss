@@ -1,0 +1,107 @@
+.gameplay-section {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-section-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-title {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.gameplay-list-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+  padding: 21px;
+  width: 100%;
+  max-width: 343px;
+
+  &:last-child {
+    background: none;
+    padding: 35px 22px;
+    border: none;
+
+    .gameplay-item-text {
+      font-family: 'Inter', sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.55556;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  @include media(desktop) {
+    max-width: 385px;
+
+    &:last-child {
+      .gameplay-item-text {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.gameplay-item-number {
+  background: #7b61ff;
+  border-radius: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 46px;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
