@@ -1,21 +1,24 @@
 .about-section {
-  background: #27273d;
-
   @include media(desktop) {
   }
 }
 
 .about-bg-wrapper {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 442px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/about/about-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 340px;
     max-width: 1440px;
+    background-image: url(../img/about/about-bg-desk.png);
   }
 }
 
@@ -25,94 +28,40 @@
 }
 
 .about-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
-
   @include media(desktop) {
-    flex-direction: row;
-  }
-}
-
-.about-img {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media(desktop) {
-    min-width: 531px;
-    margin: 0;
   }
 }
 
 .about-text-wrapper {
   @include media(desktop) {
-    max-width: 627px;
+    max-width: 591px;
+    margin-left: auto;
   }
 }
 
 .about-title {
-  text-align: left;
-  margin-bottom: 42px;
-
   @include media(desktop) {
   }
 }
 
-.about-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+.about-subtitle {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #03396c;
+  margin-bottom: 12px;
 
   @include media(desktop) {
   }
 }
 
 .about-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.44444;
-  color: #fff;
-
-  @include media(desktop) {
-  }
-}
-
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.about-list-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.about-item-circle {
-  background: #7b61ff;
-  border-radius: 16777200px;
-  min-width: 8px;
-  width: 8px;
-  height: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.about-item-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.44444;
-  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #03396c;
 
   @include media(desktop) {
   }
